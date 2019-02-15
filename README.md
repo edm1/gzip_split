@@ -27,7 +27,7 @@ optional arguments:
                           (a) no_header, the input does not contain a header
                           (b) first, copy the header to the first split only
                           (c) all, copy the header to all splits
-                          (d) none, skip the header (don't copy to any outputs)
+                          (d) none, don't copy header to any splits
 ```
 
 ### Example
