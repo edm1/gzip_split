@@ -9,9 +9,8 @@ Tool for splitting gzipped files while:
 ### Usage
 
 ```
-python gzip_split.py --help
-usage: gzip_split.py [-h] --inf <file> [--out_pattern <str>] --chunks <int>
-                     [--comment <str>] [--delete] --header
+usage: python gzip_split.py [-h] --inf <file> [--out_pattern <str>]
+                     --chunks <int> [--comment <str>] [--delete] --header
                      {no_header,first,all,none}
 
 optional arguments:
