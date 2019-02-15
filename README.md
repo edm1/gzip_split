@@ -30,3 +30,15 @@ optional arguments:
                           (c) all, copy the header to all splits
                           (d) none, skip the header (don't copy to any outputs)
 ```
+
+### Example
+
+```
+# Split VCF, removing comments, copying header to all splits, removing source
+python gzip_split.py \
+  --inf example_data/homo_sapiens-chr21.vcf.gz \
+  --out_pattern output/homo_sapiens-chr21.split{}.vcf.gz \
+  --chunks 200 \
+  --comment "##" \
+  --header all
+```
