@@ -89,7 +89,8 @@ def count_lines(inf, header=None, comment=None):
     Returns:
         int
     '''
-    comment_bytes = comment.encode()
+    if comment:
+        comment_bytes = comment.encode()
     c = 0
     # Count
     with gzip.open(inf, 'r') as in_h:
