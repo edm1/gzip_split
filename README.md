@@ -41,3 +41,13 @@ python gzip_split.py \
   --comment "##" \
   --header all
 ```
+
+### Using gnu split
+
+```
+# Split file that has no header
+inf='input_file'
+outpref='outprefix'
+gunzip -c $inf | gsplit -l 1000000 -d --additional-suffix '.gz' - $outpref --filter='gzip > $FILE'
+
+```
